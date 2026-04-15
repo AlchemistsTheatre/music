@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алхимия перекрёстков</title>
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap" rel="stylesheet">
+    <!-- APlayer CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<body>
+<!-- Созвездия -->
+<div id="particles-js"></div>
+
+<div class="container">
+    <h1>Алхимия перёкрестков</h1>
+    <p>это cовременная рок-опера по мотивам пьесы</br> <a href="https://clck.ru/3T8FrD" target="_blank">Ольги Швед</a> "Алхимия перекрестков"</p>
+    <!-- Плеер -->
+    <div id="aplayer"></div>
+    <br><p class="album">В основе лежит миф о Персефоне (дочери Деметры), рассказанный языком мощной музыки и эмоций. <br>Он раскрывает путь от страха к силе, от зависимости к свободе, от роли жертвы - к роли Творца.</p>
+    <br>
+    <footer class="footer">
+      <p>© 2026 Алхимия перекрёстков. Все права защищены.</p>
+      <p>По вопросам сотрудничества: <a href="https://clck.ru/3T8Dna" target="_blank">Алексей</a></p>
+    </footer>
+    <!-- Визуализатор музыки -->
+    <canvas id="visualizer"></canvas>
+</div>
 
 </body>
+<!-- Скрипты -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+<script src="player.js"></script>
 </html>
