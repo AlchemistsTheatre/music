@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алхимия перекрёстков</title>
+    <title>Алхимия перекрёстков, рок-опера</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="Алхимия перёкрестков - это cовременная рок-опера по мотивам одноименной пьесы Ольги Швед. Миф о Персефоне, рассказанный языком мощной музыки и эмоций. Слушать онлайн.">
+    <meta name="keywords" content="рок-опера, альбом, музыка, Алхимия перёкрестков, слушать онлайн, mp3 альбом">
+    <meta name="author" content="Алхимики">
+    <meta property="og:title" content="Алхимия перёкрестков, рок-опера">
+    <meta property="og:description" content="Миф о Персефоне, рассказанный языком мощной музыки и эмоций. Он раскрывает путь от страха к силе, от зависимости к свободе, от роли жертвы - к роли Творца.">
+    <meta property="og:image" content="images/cover.jpg">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a0a0a">
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- APlayer CSS -->
@@ -43,7 +52,9 @@
 
 <div class="container">
     <h1>Алхимия перёкрестков</h1>
-    <p>это cовременная рок-опера по мотивам пьесы</br> <a href="https://clck.ru/3T8FrD" target="_blank">Ольги Швед</a> "Алхимия перекрестков"</p>
+    <p>это cовременная рок-опера по мотивам пьесы<br> <a href="https://clck.ru/3T8FrD" target="_blank">Ольги Швед</a> "Алхимия перекрестков"
+    <a href="https://www.youtube.com/watch?v=mzEVnAWaYcM" target="_blank" class="yt-link"><img src="images/youtube.png" alt="Видео спектакля" class="yt-icon"></a>
+    </p>
     <!-- Плеер -->
     <div id="aplayer"></div>
     <br><p class="album">В основе лежит миф о Персефоне (дочери Деметры), рассказанный языком мощной музыки и эмоций. <br>Он раскрывает путь от страха к силе, от зависимости к свободе, от роли жертвы - к роли Творца.</p>
@@ -55,7 +66,12 @@
     <!-- Визуализатор музыки -->
     <canvas id="visualizer"></canvas>
 </div>
-
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+            .then(() => console.log('PWA: Service Worker зарегистрирован'));
+    }
+</script>
 </body>
 <!-- Скрипты -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>

@@ -5,6 +5,7 @@ const ap = new APlayer({
     order: 'list', // Последовательное проигрывание
     theme: '#d4af37', // Золотой цвет прогресс-бара
     autoplay: false,
+    loop: 'none', // После проигрывания последнего трека делаем паузу
     audio: [
         {
             name: 'У трех дорог (пролог)',
@@ -108,7 +109,6 @@ ap.on('listswitch', function () {
         img.classList.remove('fade');
     }, 300);
 });
-
 
 // Визуализатор музыки снизу
 const audio = ap.audio;

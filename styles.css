@@ -46,7 +46,6 @@ a {
     text-decoration: underline;
 }
 
-
 .album {
     text-align: center;
     max-width: 98%;
@@ -66,6 +65,23 @@ a {
     font-size: 16px !important;
 }
 
+/* Youtube icon */
+.yt-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+.yt-icon {
+    width: 26px;
+    height: 18px;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+/* hover эффект */
+.yt-link:hover .yt-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 /* Плеер */
 #aplayer {
@@ -136,6 +152,19 @@ a {
     padding-left: 12px !important;
     border-top: 1px solid rgba(212, 175, 55, 0.28) !important;
     transition: background 0.2s ease;
+    height: auto !important;
+    line-height: 1.4;
+    display: block !important;
+}
+
+/* Название трека — разрешаем перенос */
+.aplayer-list-title {
+    white-space: normal !important;
+    word-break: break-word;
+}
+/* Если есть автор рядом */
+.aplayer-list-author {
+    white-space: normal !important;
 }
 
 /* Активный трек */
@@ -182,7 +211,6 @@ a {
 /* Заполненная часть */
 .aplayer-played {
     background: linear-gradient(90deg, #d4af37, #f5d76e) !important;
-    height: 100% !important;
     border-radius: 4px;
     height: 6px !important;
     overflow: hidden;
